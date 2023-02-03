@@ -84,7 +84,7 @@ helps to stop your site looking like a Bootstrap clone!
 
 /* CSS rule to overwrite the navbar-brand font hover color */
 .navbar_coca_cola .navbar-brand:hover {
-    color: green;
+    color: lightgreen;
 }
 
 /* NAVIGATION MENU */
@@ -115,14 +115,14 @@ for setting the active font color and background colour */
 .navbar_coca_cola .navbar-nav > .active > a:hover,
 .navbar_coca_cola .navbar-nav > .active > a:focus {
     color: #760003; /* Font color for active font */
-    background-color: #3399ff; /* Blue color for background */
+    background-color: cornflowerblue; /* Blue color for background */
 }
 
 /* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus */
 /* CSS rule to overwrite the bootstrap.css text hover color on the navbar */
 .navbar_coca_cola .navbar-nav > li > a:hover,
 .navbar_coca_cola .navbar-nav > li > a:focus {
-    color: green;
+    color: lightgreen;
 }
 
 /* These next two CSS rules control the style of the icon bar */
@@ -185,7 +185,8 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     /* The div block for the main_3d_image has no vertical size,
     so we need a height to see the background image */
-    height: 200px; }
+    height: 200px;
+}
 #main_text {
     float: left;
     margin: 5%;
@@ -197,17 +198,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 #main_text h2 {
     color: rgba(0,102,153,1);
-    font-size: 20px;
+    font-size: 35px;
     margin-top: 0px;
     margin-bottom: 5px;
 }
 #main_text h3 {
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 #main_text p {
-    font-size: 12px;
+    font-size: 13px;
     margin: 0px;
     line-height: 1.2;
 }
@@ -217,7 +218,11 @@ h1, h2, h3, h4, h5, h6 {
     /* border-radius: .25rem;*/
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: rgba(182, 231, 243, 1.0);
+    background-color: lightblue;
+}
+
+.card-text {
+    font-size: 15px;
 }
 
 /* CSS rule to style the footer */
@@ -228,12 +233,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-text > a {
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .navbar-text > p {
     color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -243,7 +248,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .social {
     padding-top: 0px;
-    width: 30%; }
+    /*width: 30%;*/
+}
 
 .fa-twitter:before {
     content: "\f081";
@@ -271,11 +277,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Small devices (landscape phones, 576px and up)
  */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     /* CSS rule to style the footer */
+
     .footer {
-        background-color: #257600;
+        background-color: darkseagreen;
         height: 60px;
+    }
+
+    .card {
+        background-color: antiquewhite;
     }
 
     .navbar-text > a {
@@ -284,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .navbar-text > p {
         color: rgb(228, 75, 15);
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .copyright {
@@ -294,5 +305,34 @@ h1, h2, h3, h4, h5, h6 {
     .social {
         padding-top: 7px;
     }
+}
 
+@media (max-width: 1024px) and (min-width: 576px) {
+    /* CSS rule to style the footer */
+
+    .footer {
+        background-color: darkgray;
+        height: 60px;
+    }
+
+    .card {
+        background-color: lightcyan;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: rgb(228, 75, 15);
+        font-size: 14px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
 }
